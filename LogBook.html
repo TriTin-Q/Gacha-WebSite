@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<script src="script.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <title>MHA-TLOA || LogBook</title>
+    <!-- <script src="app.js"></script>-->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0f387a; z-index: auto;">
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarNav" style=" z-index: auto;">
+                <ul class="nav nav-tabs" style="margin-left: auto; margin-right: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Context.php">Context</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Personnage.html">Personnage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="LogBook.html">LogBook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="About.html">&agrave; propos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- <img src="Data/My_Hero_Academia_logo.png" alt="MHA" style="top: 0; width: 20%; height: 20%;  z-index: 10; >-->
+    </header>
+    <style>
+        body {
+            background-image: url("Data/Background.jpg");
+            color: white;
+            background-size: cover;
+            height: 720px;
+        }
+
+        table {
+            /*max-width: 768px;*/
+        }
+    </style>
+    <center><h3> LogBook </h3></center>
+    <div ng-app="myApp" ng-controller="customersCtrl">
+         <div ng-controller="myCtrl">
+             <div class="bar">
+                 <!-- Create a binding between the searchString model and the text field -->
+
+
+        <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan active-cyan-2 mt-2">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input class="form-control form-control-sm ml-3 w-75" type="text" ng-model="searchString" placeholder="Enter your search terms" aria-label="Search" />
+        </form>
+    </div>
+    <br />
+    <left>
+        sort by :
+        <select ng-model="selectedName" ng-options="x.model for x in select"></select>
+    </left>
+    <table class="table table-hover table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Activity </th>
+                <th scope="col">Section</th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="x in names | orderBy : selectedName.model | searchFor:searchString">
+            <tr>
+                <td>{{ x.Date|date:'dd/MM' }}</td>
+                <td>{{ x.Activite }}</td>
+                <td>{{ x.Section}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.select = [
+                { model: 'Date', test: "1" },
+                { model: "Section", test: "1" }
+            ];
+        });
+        app.controller('customersCtrl', function ($scope, $http) {
+            $http.get("Journal.json")
+                .then(function (response) { $scope.names = response.data.records; });
+        });
+
+        // Create the instant search filter
+
+        app.filter('searchFor', function () {
+            // All filters must return a function. The first parameter
+            // is the data that is to be filtered, and the second is an
+            // argument that may be passed with a colon (searchFor:searchString)
+            return function (arr, searchString) {
+                if (!searchString) {
+                    return arr;
+                }
+                var result = [];
+                searchString = searchString.toLowerCase();
+                // Using the forEach helper method to loop through the array
+                angular.forEach(arr, function (x) {
+                    if (x.Date.toLowerCase().indexOf(searchString) !== -1 || x.Activite.toLowerCase().indexOf(searchString) !== -1 || x.Section.toLowerCase().indexOf(searchString) !== -1) {
+                        result.push(x);
+                    }
+                });
+                return result;
+            };
+        });
+    </script>
+</body>
+</html>

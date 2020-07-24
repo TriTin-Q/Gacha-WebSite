@@ -1,0 +1,127 @@
+[{
+    "Nom":"Izuku Midoriya",
+    "Description": "a",
+    "Statut": "a",
+    "Birthday": "a",
+    "Taille" : "a",
+    "Alter":"",
+    "Style_de_Combat":""
+  },
+  {
+    "Nom":"Katsuki Bakugo",
+    "Description": " élève du lycée Yuei, dans la seconde A, et le rival d'Izuku Midoriya. Son rêve est de devenir le héros le plus puissant de la planète et ainsi détrôner All Might.",
+    "Statut": "Etudiant",
+    "Birthday": "20 Avril",
+    "Taille" : "172 cm",
+    "Alter":"Explosion",
+    "Style_de_Combat":"Frappe et esquive"
+  },
+  {
+    "Nom":"Asui Tsuyu",
+    "Description": " élèves du lycée Yuei. Elle projette de devenir une Héroïne Professionnelle. Tsuyu est devenue une amie d'Izuku assez rapidement étant dans la même classe que lui.",
+    "Statut": "Eudiante",
+    "Birthday": "12 Février",
+    "Taille" : "150 cm",
+    "Alter":"Frog",
+    "Style_De_Combat":"Assistance à moyenne portée"
+  },
+   {
+    "Nom":"Toshinori Yagi",
+    "Description": "Toshinori est le premier héros le plus puissant et le \"symbole de la paix\" qui a inspiré toute une génération de héros, y compris Izuku Midoriya, auquel il a passé le flambeau du One for All. Il est connu pour son attitude joyeuse et souriante et son image publique comme étant le Héros n°1 incontesté, mais son temps pour l'héroïsme est de plus en plus court, un fait connu uniquement par Izuku Midoriya.",
+    "Statut": "Professeur",
+    "Birthday": "10 Juin",
+    "Taille" : "220 cm",
+    "Alter":"One For All",
+    "Style_de_Combat":"Corps à corps"
+  },
+  {
+    "Nom":"Ochaco Uraraka",
+    "Description": "étudiante du Lycée Yuei et une élève de la Seconde A. Elle projette de devenir une Héroïne Professionnelle pour gagner de l'argent et pouvoir offrir une vie plus confortable à ses parents.",
+    "Statut": "Etudiante",
+    "Birthday": "27 Décembre",
+    "Taille" : "156 cm",
+    "Alter":"Gravity Zero",
+    "Style_de_Combat":"Rapproché"
+  },
+   {
+    "Nom":"Momo Yaoyorozu",
+    "Description": "élèves du Lycée Yuei et a été acceptée par recommandation. Elle est également la Vice-déléguée de la Seconde A.",
+    "Statut": "Etudiante",
+    "Birthday": "23 Septembre",
+    "Taille" : "173 cm",
+    "Alter":"Creation",
+    "Style_de_Combat":"Polyvalent"
+  },
+{
+    "Nom":"Eijiro Kirishima",
+    "Description": "étudiants de la classe 1-A au lycée Yuei. Il projette de devenir un Héros Professionnel. Il est connu aussi sous le nom de Red Riot en hommage à son héro préféré.",
+    "Statut": "Etudtiant",
+    "Birthday": "16 Octobre",
+    "Taille" : "170 cm",
+    "Alter":"Durcissement",
+    "Style_de_Combat":"Corps à corps"
+  },
+{
+    "Nom":"Fumikage Tokoyami",
+    "Description": " élève du lycée Yuei. Il projette de devenir un héros professionnel.",
+    "Statut": "Etudiant",
+    "Birthday": "30 Octobre",
+    "Taille" : "158 cm",
+    "Alter":"Dark Shadow",
+    "Style_de_Combat":"Attaque à grande échelle"
+  },
+  {
+    "Nom":"Denki Kaminari",
+    "Description": " élèves de la Seconde A du lycée Yuei. Il projette de devenir un Héros Professionnel.",
+    "Statut": "Etudiant",
+    "Birthday": "29 Juin",
+    "Taille" : "168 cm",
+    "Alter":"Electricité",
+    "Style_de_Combat":"Assistance en arrière garde"
+  },
+  {
+    "Nom":"Tenya Iida",
+    "Description": "étudiant du lycée Yuei et le Délégué de la seconde A. C'est le petit-frère de Tensei Iida. Étant né dans une famille riche de héros prestigieux et estimés, il travaille sans relâche pour défendre ses valeurs familiales et incarner ce que signifie vraiment être un héros.",
+    "Statut": "Etudiant",
+    "Birthday": "22 Aout",
+    "Taille" : "179 cm",
+    "Alter":"Engine",
+    "Style_de_Combat":"Rapproché et basé sur la vitesse"
+  },
+{
+    "Nom":"Kyoka Jiro",
+    "Description": "étudiantes du lycée Yuei. Elle projette de devenir une Héroïne Professionnelle",
+    "Statut": "Etudiante",
+    "Birthday": "1 Aout",
+    "Taille" : "154 cm",
+    "Alter":"Earphone Jack",
+    "Style_de_Combat":"Assistance à moyenne portée"
+  },
+{
+    "Nom":"Mina Ashido",
+    "Description": "étudiantes du Lycée Yuei. Elle projette de devenir une Héroïne Professionnelle.",
+    "Statut": "Etudiante",
+    "Birthday": "30 aout",
+    "Taille" : "159",
+    "Alter":"Acide",
+    "Style_de_Combat":" Assistance à moyenne distance"
+  },
+{
+    "Nom":"Mirio Togata",
+    "Description": "élève de terminale du Lycée Yuei ayant comme pseudonyme, Lemillion (ルミリオン, Rumirion). Il fait partie des trois meilleurs étudiant de l'académie avec Tamaki Amajiki et Nejire Hado.",
+    "Statut": "Etudiant",
+    "Birthday": "18 ans",
+    "Taille" : "181 cm",
+    "Alter":"Perméation",
+    "Style_de_Combat":"Esquive et attaque corps à corps"
+  },
+{
+    "Nom":"Todoroki Shoto",
+    "Description": "étudiant au Lycée Yuei dans la seconde A, et fut accepté par recommandation. Il projette de devenir un Héros Professionnel. C'est également le fils de l'actuel N°1 des Héros, Endeavor.",
+    "Statut": "Etudiant",
+    "Birthday": "11 Janvier",
+    "Taille" : "176 cm",
+    "Alter":"Glace et Feu",
+    "Style_de_Combat":"Combat longue et moyenne distance"
+  }
+ ]

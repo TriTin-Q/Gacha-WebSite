@@ -1,0 +1,124 @@
+﻿{
+  "records": [
+    {
+      "Date": "15/05",
+      "Activite": "Commencement du projet, Gacha Game, choix du thème : « My Hero Academia »",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "16/05",
+      "Activite": "Conçoit une petite partie texte avant la partie graphique à fin de tout mettre en place",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "17/05",
+      "Activite": "Apprend la partie Graphique, estimant qu’il faudrait voir comment se passe l’interface graphique pour continuer à concevoir le jeu. ",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "18/05",
+      "Activite": "SFML C++ est l’interface choisis, quelques problèmes de librairies mais finit par réussir à créer une fenêtre en affichant l’objet. Nom du jeu : « My Hero Academia, The lord of the Alter ».  \nConception réussit : Ecran d’accueil ",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "19-20/05",
+      "Activite": ": Conception réussis :   \n - Menu d’accueil   \n - Problème : blocage idée de conception de combats et d’invocation. (Manque de designer et manque d’expérience.)   \n Début conception de page web. Mise en place de la structure de la pag",
+      "Section": "Application, Jeux-Vidéo & Site Web"
+    },
+    {
+      "Date": "21/05",
+      "Activite": "Une première idée de structure est faites.",
+      "Section": "Site Web"
+    },
+    {
+      "Date": "22/05",
+      "Activite": "Poursuite du jeu.   \n Conception réussit : Différents « States » état afin de généré plusieurs états (ex : Menu, fiches des personnages, combats, etc…) . Un tableau d’état.",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "25/05",
+      "Activite": "Choix d’images, et conception du menu général, avec des « boutons »   \n conception réussis : Passage entre l’écran d’accueil et le menu d’accueil. + Boutons « Personnages », « Combats » et « Invocations ». ",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "26/05",
+      "Activite": "Conception réussis : Une box de personnages, avec une liste de personnages et un début de fiche de personnages.",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "27/05",
+      "Activite": "Mise en place d’un bouton retour, qui permet de retourner à l’état d’avant. Conception du bouton pas vraiment optimisé, le bouton permet d’ajouter un nouvel état qui est l’écran précédent et non retirer l’état actuelle pour revenir à l’état d’avant.   \n Conception réussis : Le bouton retour (texture et emplacement)",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "28/05",
+      "Activite": "Création et implémentations des personnages un à un.   \n Conception réussis : Création et implémentations de chaque fiche personnages en « .ini » + idée d’exploitation : ifstream pour exploiter les données. ",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "29/05",
+      "Activite": "Mise en place de chaque personnages dans la box et optimiser la classe « personnages » et mise en place de la fiche personnage. ",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "1er/06",
+      "Activite": "Commencement de la conception du menu de combat : Parties « Scénario école » et partie « Aventure » ",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "4/06",
+      "Activite": "Implémentation et test de sprite dans le main.   \n Manque de « sprite » de designer. ",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "5/06",
+      "Activite": "Implémentation et test d’un son.   \n Après choix et test fait, il est implémenté, dès l’apparition de la fenêtre donc dès l’écran d’accueil.",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "8/06",
+      "Activite": "Imlpémentation du début d’une conversation entre les personnages dans le « scénario school »   \n Problème, réfléchit comment faire pour faire une succession de conversation. ",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "9/06",
+      "Activite": "Re-mise en forme de la page d’accueil web. (Mettant en contexte l’histoire du jeu.)",
+      "Section": "Site Web"
+    },
+    {
+      "Date": "10/06",
+      "Activite": ": Re-mise en forme de chaque fiche personnages sur l'application ",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "11/06",
+      "Activite": "Un point sur le journal de bord",
+      "Section": "Word"
+    },
+    {
+      "Date": "12/06",
+      "Activite": "Conception des invocations.   \n Conceptions réussis : Page menu d’invocation, les sprites et invocations.",
+      "Section": "Application, Jeux-Vidéo"
+    },
+    {
+      "Date": "15/06",
+      "Activite": "Intégration de la page menu d’invocation, les sprites  et les invocations.   \n Poursuite du site web.",
+      "Section": "Application, Jeux-Vidéo & Site Web"
+    },
+    {
+      "Date": "16/06",
+      "Activite": "Implémentation d'une liste des personnages + case de sélection pour trier + Barre de recheche (AngularJS)",
+      "Section": "Site Web"
+    },
+    {
+      "Date": "17/06",
+      "Activite": "Fiche Personnage de chaque personnage.",
+      "Section": "Site Web"
+    },
+    {
+      "Date": "18/06",
+      "Activite": "Implémentation de la page \"LogBook\"",
+      "Section": "Site Web"
+    }
+  ]
+}

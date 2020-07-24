@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="Style.css">
+    <script src="app.js"></script>
+    <script src="protractor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>MHA-TLOA || Izuku Midoriya</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0f387a; z-index: auto;">
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarNav" style=" z-index: auto;">
+                <ul class="nav nav-tabs" style="margin-left: auto; margin-right: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../Accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../Context.php">Context</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../Personnage.html">Personnage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../LogBook.html">LogBook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../About.html">&agrave; propos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        body {
+            background-image: url("../Data/Background.jpg");
+            color: white;
+            background-size: cover;
+            height: 720px;
+        }
+
+        .Information {
+            margin-left: 70%;
+            margin-right: 5%;
+        }
+
+        .titre {
+            /*margin-left : 75%;*/
+            background-image: url("../Data/Title1.png");
+            /*background-attachment:fixed;*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .Carac {
+        }
+    </style>
+    <!--<center><h1>Izuku Midoriya</h1></center>-->
+    <div id="Perso">
+        <div class="Casual">
+            <p style="position: absolute; margin-top: 150px; left: 230px;">Casual Outfit</p>
+            <img src="../Fiche_Personnage/Deku_Casual.png" style="position: absolute; margin-top: 150px; left: 150px; width: 15%; height: 55%;" onclick="Two(); replace();">
+        </div>
+        <div class="Alter">
+            <p style="position: absolute; margin-top: 70px; left: 480px;">Uniform Outfit</p>
+            <img src="../Fiche_Personnage/Deku_Costume.png" style="position: absolute; margin-top: 100px; left:400px; width: 15%; height: 75%;" onclick="One(); replace();">
+        </div>
+        <div class="School">
+            <p style="position: absolute; margin-top: 140px; left: 720px;">School Outfit</p>
+            <img src="../Fiche_Personnage/Deku_School.png" style="position: absolute; margin-top: 170px; left: 700px; width: 8%; height: 50%;" onclick="Three(); replace();">
+        </div>
+    </div>
+    <script>
+        var principal1 = new boolean("true");
+        var principal2 = new boolean("false");
+        var principal3 = new boolean("false");
+        function One() {
+            principal1 = "true";
+            principal2 = "false";
+            principal3 = "false";
+        }
+        function Two() {
+            principal1 = "false";
+            principal2 = "true";
+            principal3 = "false";
+        }
+        function Three() {
+            principal1 = "false";
+            principal2 = "false";
+            principal3 = "true";
+        }
+        function replace() {
+            if (principal1 == "true") {
+                document.getElementById("Perso").innerHTML = '<div class="Casual"><p style = "position: absolute; margin-top: 150px; left: 230px;" > Casual Outfit</p > <img src="../Fiche_Personnage/Deku_Casual.png" style="position: absolute; margin-top: 150px; left: 150px; width: 15%; height: 55%;" onclick="Two();replace();"> </div><div class="Alter"><p style="position: absolute; margin-top: 50px; left: 480px;">Uniform Outfit</p><img src="../Fiche_Personnage/Deku_Costume.png" style="position: absolute; margin-top: 70px; left:400px; width: 15%; height: 75%;" onclick="One();replace();"></div><div class="School"><p style="position: absolute; margin-top: 140px; left: 720px;">School Outfit</p><img src="../Fiche_Personnage/Deku_School.png" style="position: absolute; margin-top: 170px; left: 700px; width: 8%; height: 50%;" onclick="Three();replace();"></div>'
+            }
+            if (principal3 == "true") {
+                document.getElementById("Perso").innerHTML = '<div class="alter"><p style = "position: absolute; margin-top: 130px; left: 200px;" > Costume Outfit</p > <img src="../Fiche_Personnage/Deku_Costume.png" style="position: absolute; margin-top: 180px; left: 170px; width: 10%; height: 55%;" onclick="One();replace();"> </div><div class="School"><p style="position: absolute; margin-top: 50px; left: 480px;">School Outfit</p><img src="../Fiche_Personnage/Deku_School.png" style="position: absolute; margin-top: 70px; left:440px; width: 12%; height: 75%;" onclick="Three();replace();"></div><div class="Casual"><p style="position: absolute; margin-top: 140px; left: 720px;">Casual Outfit</p><img src="../Fiche_Personnage/Deku_Casual.png" style="position: absolute; margin-top: 150px; left: 625px; width: 18%; height: 60%;" onclick="Two();replace();"></div>'
+            }
+            if (principal2 == "true") {
+                document.getElementById("Perso").innerHTML = '<div class="alter"><p style = "position: absolute; margin-top: 130px; left: 200px;" > Costume Outfit</p > <img src="../Fiche_Personnage/Deku_Costume.png" style="position: absolute; margin-top: 180px; left: 170px; width: 10%; height: 55%;" onclick="One();replace();"> </div><div class="Casual"><p style="position: absolute; margin-top: 50px; left: 480px;">School Outfit</p><img src="../Fiche_Personnage/Deku_Casual.png" style="position: absolute; margin-top: 30px; left:350px; width: 20%; height: 75%;" onclick="Two();replace();"></div><div class="School"><p style="position: absolute; margin-top: 140px; left: 720px;">School Outfit</p><img src="../Fiche_Personnage/Deku_School.png" style="position: absolute; margin-top: 170px; left: 700px; width: 8%; height: 50%;" onclick="Three();replace();"></div>'
+            }
+        }
+    </script>
+
+    <div class="Information">
+        <ul>
+            <li>
+                <div class="titre">
+                    <center><h3>IZUKU MODORIYA</h3></center>
+                </div>
+            </li>
+            <br />
+            <li>
+                <div class="Description">
+                    N&eacute; Sans-Alter, il attirera l'attention d'All Might pour son h&eacute;ro&iuml;sme et deviendra l'h&eacute;ritier de son Alter : le One For All.
+                    Poursuivant ses &eacute;tudes au lyc&eacute;e Yuei , dans la seconde A, afin de devenir un h&eacute;ros professionnel,
+                    Izuku aura la lourde t&acirc;che en tant que neuvi&egrave;me d&eacute;tenteur du One for All de devenir le nouveau symbole de la paix apr&egrave;s All Might.
+                </div>
+            </li>
+            <br />
+            <li>
+                <div class="Carac border border-light rounded">
+                    <center><h5> Caractéristique </h5></center>
+                    <ul>
+                        <li>Statut : Etudiant à Yuei</li>
+                        <li>Date anniversaire : 15 Juillet</li>
+                        <li>Taille : 166 cm</li>
+                        <li>Alter : One For All</li>
+                        <li>Style de combat : Corps à corps</li>
+                        <li></li>
+                        <li><b>Puissance :</b> ○ ○ ○ ○ ○ </li>
+                        <li><b>Vitesse :</b> ○ ○ ○ ○ </li>
+                        <li><b>Technique :</b> ○ ○ ○ </li>
+                        <li><b>Intelligence :</b> ○ ○ ○ ○ </li>
+                        <li><b>Esprit d'équipe :</b> ○ ○ ○ ○ ○ </li>
+
+                    </ul>
+                </div>
+
+            </li>
+
+        </ul>
+
+
+    </div>
+</body>
+</html>
